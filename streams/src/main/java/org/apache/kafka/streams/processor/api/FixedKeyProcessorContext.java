@@ -91,4 +91,6 @@ public interface FixedKeyProcessorContext<KForward, VForward> extends Processing
      * @see FixedKeyProcessorContext#forward(FixedKeyRecord)
      */
     <K extends KForward, V extends VForward> void forward(FixedKeyRecord<K, V> record, final String childName);
+
+    <K extends KForward, V extends VForward> void forward(Record<K, V> record);
 }
